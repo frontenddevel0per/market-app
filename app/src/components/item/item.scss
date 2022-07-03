@@ -1,0 +1,140 @@
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 48px 120px;
+    gap: 16px;
+
+    &-back {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 8px;
+        gap: 8px;
+
+        width: 88px;
+        height: 40px;
+
+        border-radius: 10px;
+
+        img {
+            width: 24px;
+            height: 24px;
+        }
+
+        p {
+            display: inline-block;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 24px;
+
+            /* Font/Dark */
+
+            color: #1A1F16;
+        }
+    }
+
+    &__header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        &-collage {
+            display: flex;
+            gap: 16px;
+
+            &-list {
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+
+                img {
+                    background: #FFFFFF;
+                    border-radius: 13px;
+                    width: 50px;
+                }
+            }
+
+            &-active {
+                img {
+                    background: #FFFFFF;
+                    border-radius: 13px;
+                    width: 250px;
+                }
+            }
+        }
+
+        &-info {
+            h1 {
+                font-weight: 700;
+                font-size: 61px;
+                line-height: 74px;
+                color: #1A1F16;
+
+                margin: 0;
+                padding: 0 0 16px 0;
+            }
+
+            h2 {
+                font-weight: 500;
+                font-size: 31px;
+                line-height: 38px;
+                color: rgba(26, 31, 22, 0.5);
+
+                margin: 0;
+                padding: 0 0 16px 0;
+            }
+
+            &-rating {
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 24px;
+                color: #12805D;
+                margin: 0;
+            }
+
+            &-shortdesc {
+                font-size: 20px;
+                line-height: 24px;
+                color: #1A1F16;
+            }
+
+            button {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                margin: 0 auto;
+
+                padding: 8px 24px;
+                gap: 8px;
+                background: #1A1F16;
+                border-radius: 14px;
+
+                p {
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 24px;
+                    color: #FFFFFF;
+                    margin: 0;
+                }
+            }
+        }
+    }
+
+    &__footer {
+
+        h3 {
+            font-weight: 500;
+            font-size: 31px;
+            line-height: 38px;
+            color: #1A1F16;
+        }
+
+        p {
+            font-size: 20px;
+            line-height: 24px;
+            color: #60695C;
+        }
+    }
+}

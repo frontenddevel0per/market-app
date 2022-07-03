@@ -1,0 +1,84 @@
+.bag__list-item {
+    display: grid;
+    grid-template-columns: 20% 70%;
+    justify-content: space-between;
+    background: #FFFFFF;
+    border-radius: 21px;
+    padding: 16px 24px;
+
+    img {
+        width: 100%;
+    }
+
+    &-info {
+        h2 {
+            font-weight: 400;
+            font-size: 31px;
+            line-height: 38px;
+            color: #1A1F16;
+            margin: 0;
+            padding-bottom: 15px;
+        }
+
+        h3 {
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 24px;
+            color: #60695C;
+            margin: 0;
+        }
+
+        &-desc {
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 24px;
+            color: #1A1F16;
+        }
+
+        &-rating {
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 24px;
+            color: #12805D;
+        }
+
+        &-priceholder {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            p {
+                display: inline-block;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 24px;
+                color: #1A1F16;
+            }
+
+            &-quant {
+                display: flex;
+                gap: 8px;
+                align-items: center;
+
+                button {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 8px;
+                    gap: 8px;
+
+                    width: 34px;
+                    height: 34px;
+
+                    background: none;
+
+                    img {
+                        width: 18px;
+                        height: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
