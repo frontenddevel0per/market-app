@@ -59,7 +59,7 @@ const App = () => {
         <NavBar/> {/* это навбар слева, у которого позишн стики */}
         <Routes>
           <Route exact path="/" element={<Catalog onAdd={onAdd}/>} />
-          <Route exact path="/id/3" element={<Item id="3" onAdd={onAdd}/>} />
+          <Route exact path="/id/3" element={<Item id={3} onAdd={onAdd}/>} />
           <Route exact path="/bag" element={<Bag bag={bag} onAdd={onAdd} onRemove={onRemove}/>} />
         </Routes>
         {/* <Catalog onAdd={onAdd}/> */}
