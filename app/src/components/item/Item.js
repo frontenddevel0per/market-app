@@ -1,4 +1,5 @@
-import { useState} from 'react';
+import { useState } from 'react';
+import { useParams, useNavigate, Navigate } from 'react-router-dom';
 
 import './item.scss';
 
@@ -7,8 +8,10 @@ import addToBag from '../../resources/img/addtobag.png';
 
 import DB from '../../service/DB.json';
 
-const Item = ({id, onAdd}) => {
+const Item = ({onAdd}) => {
     const {data} = DB;
+    const {id} = useParams();
+    let navigate = useNavigate();
 
     const [activeImage, setActiveImage] = useState(data[id].src1);
 
@@ -24,10 +27,10 @@ const Item = ({id, onAdd}) => {
 
     return (
         <div className="item">
-            <div className="item-back">
+            <button className="item-back" onClick={() => navigate("/")}>
                 <img src={back} alt="Back" />
                 <p>Back</p>
-            </div>
+            </button>
             <div className="item__header">
                 <div className="item__header-collage">
                     <div className="item__header-collage-list">
