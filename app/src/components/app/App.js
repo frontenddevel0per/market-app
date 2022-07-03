@@ -27,12 +27,12 @@ const App = () => {
   }, [bag])
 
   const onAdd = (id) => {
-    if (bag.filter(item => item.id === id) > -1) {
-      setBag(bag => [...bag, ...[{"id": id, "quantity": 1}]])
+    if (bag.filter(item => item.id === Number(id)) > -1) {
+      setBag(bag => [...bag, ...[{"id": Number(id), "quantity": 1}]])
     } else {
       setBag(bag.map(item => {
-        if (item.id === id) {
-          return {"id": id, "quantity": item.quantity + 1};
+        if (item.id === Number(id)) {
+          return {"id": Number(id), "quantity": item.quantity + 1};
         } else {
           return item;
         }

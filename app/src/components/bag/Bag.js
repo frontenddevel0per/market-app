@@ -1,4 +1,5 @@
 import BagItem from '../bagItem/BagItem';
+import EmptyBag from '../emptyBag/EmptyBag';
 
 import './bag.scss';
 
@@ -13,9 +14,9 @@ const Bag = ({bag, onAdd, onRemove}) => {
 
     return (
         <div className="bag">
-            <h1>Check your Bag Items</h1>
+            <h1>Проверьте товары в корзине</h1>
             <div className="bag__list">
-                {bagList}        
+                {bag.length > 0 ? bagList : <EmptyBag/>}
             </div>
         </div>
     )

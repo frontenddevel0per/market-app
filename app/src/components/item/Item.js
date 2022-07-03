@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useParams, useNavigate, Navigate } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 
 import './item.scss';
 
@@ -29,7 +29,7 @@ const Item = ({onAdd}) => {
         <div className="item">
             <button className="item-back" onClick={() => navigate("/")}>
                 <img src={back} alt="Back" />
-                <p>Back</p>
+                <p>Назад</p>
             </button>
             <div className="item__header">
                 <div className="item__header-collage">
@@ -57,7 +57,7 @@ const Item = ({onAdd}) => {
                 </div>
             </div>
             <div className="item__footer">
-                <h3>Description</h3>
+                <h3>Описание</h3>
                 {description}
             </div>
         </div>
